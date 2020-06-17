@@ -2,6 +2,7 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import TaskProps from './TaskProps/TaskProps';
 
 // function Avatar(props) {
 //   return (
@@ -131,6 +132,7 @@ class App extends Component {
         <Title title={comment.title} />
         <Description />
         <Button />
+        <TaskProps name={'Bani'} age={2} func={speed(3, 4)} objects={'d'} />
       </div>
     );
   }
@@ -143,6 +145,10 @@ const comment = {
   },
   title: 'Cat',
   buttonText: 'TextButton'
+}
+
+function speed(a, b) {
+  return a + b;
 }
 
 export default App;
