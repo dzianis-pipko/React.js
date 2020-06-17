@@ -125,14 +125,23 @@ class ButtonText extends Component {
 }
 
 class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      obj: [
+        'fff', 'ggg'
+      ]
+    }
+  }
   render() {
+    const obje = { hh: 'jj' };
     return (
       <div className="App">
         <Avatar author={comment.author} />
         <Title title={comment.title} />
         <Description />
         <Button />
-        <TaskProps name={'Bani'} age={2} func={speed(3, 4)} objects={'d'} />
+        <TaskProps name={'Bani'} age={2} func={speed(3, 4)} objects={obje.hh} />
       </div>
     );
   }
