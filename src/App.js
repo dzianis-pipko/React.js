@@ -134,14 +134,14 @@ class App extends Component {
     }
   }
   render() {
-    const obje = { hh: 'jj' };
+    const obje = { hh: 'jj', gg: 'gg' };
     return (
       <div className="App">
         <Avatar author={comment.author} />
         <Title title={comment.title} />
         <Description />
         <Button />
-        <TaskProps name={'Bani'} age={2} func={speed(3, 4)} objects={obje.hh} />
+        <TaskProps name={'Bani'} age={2} func={speed(3, 4)} objects={obje.hh} array={this.state.obj} />
       </div>
     );
   }

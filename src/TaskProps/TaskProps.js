@@ -7,6 +7,7 @@ function TaskProps(props) {
          <p>Age: {props.age}</p>
          <p>Speed: {props.func}</p>
          <p>Objects: {props.objects}</p>
+         <p>Array: {props.array}</p>
       </div>
    )
 };
